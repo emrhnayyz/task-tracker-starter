@@ -17,7 +17,7 @@ const GorevleriGoster = ({ array, setArray }) => {
     setArray(array.filter((taskList) => taskList.id !== id));
   };
 
-  console.log(array);
+  
 
   return (
     <div>

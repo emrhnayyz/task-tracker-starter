@@ -2,17 +2,17 @@ import React, { useState } from "react";
 
 
 const GorevEkle = ({ array, setArray }) => {
-  const [task, setGorev] = useState("");
-  const [time, setGun] = useState("");
+  const [task, setTask] = useState("");
+  const [time, setTime] = useState("");
 
   const [showButton,setShowButton]= useState(true)
 
   const gorevDegisikligi = (e) => {
-    setGorev(e.target.value);
+    setTask(e.target.value);
   };
 
   const gunDegisikligi = (e) => {
-    setGun(e.target.value);
+    setTime(e.target.value);
   };
 
   const addGorev = (e) => {
@@ -35,16 +35,16 @@ const GorevEkle = ({ array, setArray }) => {
       setArray([...array, yeniGorev]);
 
     
-      setGorev("");
-      setGun("");
+      setTask("");
+      setTime("");
     }
 
    
     setArray([...array, yeniGorev]);
 
     
-    setGorev("");
-    setGun("");
+    setTask("");
+    setTime("");
   };
 
   const showBtn =()=>{
