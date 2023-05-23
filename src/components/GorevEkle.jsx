@@ -56,7 +56,8 @@ const GorevEkle = ({ array, setArray }) => {
     <div>
       <header className="header">
         <h1>TASK TRACKER</h1>
-        <button onClick={showBtn} className="btn">ADD TASK BAR</button>
+        <button onClick={showBtn} className="btn">{showButton ? "CLOSE TASK BAR" : "SHOW TASK BAR"}</button>
+        
       </header>
       {showButton && <form onSubmit={addGorev}>
         <div className="form-control">
