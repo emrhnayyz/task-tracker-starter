@@ -75,7 +75,7 @@ const GorevEkle = ({ array, setArray }) => {
           <label htmlFor="day">Day & Time</label>
           <input
             id="day"
-            type="date"
+            type="datetime-local"
             name="day"
             placeholder="Add Task"
             value={time}
