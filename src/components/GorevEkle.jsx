@@ -28,6 +28,17 @@ const GorevEkle = ({ array, setArray }) => {
       bitti: false,
     };
 
+    if(!task){
+      alert("Please enter a task")
+      return
+    }else{
+      setArray([...array, yeniGorev]);
+
+    
+      setGorev("");
+      setGun("");
+    }
+
    
     setArray([...array, yeniGorev]);
 
