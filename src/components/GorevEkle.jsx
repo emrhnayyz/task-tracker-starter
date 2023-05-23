@@ -28,8 +28,8 @@ const GorevEkle = ({ array, setArray }) => {
       bitti: false,
     };
 
-    if(!task){
-      alert("Please enter a task")
+    if(!task || !time){
+      alert("Please enter a task and date")
       return
     }else{
       setArray([...array, yeniGorev]);
